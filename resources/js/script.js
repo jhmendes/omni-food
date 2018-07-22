@@ -94,4 +94,23 @@ $(document).ready(function() {
         offset: '50%'
     });
 
+     /* MOBILE NAVIGATION */
+
+      
 });
+
+$('.js--nav-icon').click(function() {
+    var nav = $('.js--main-nav');
+    nav.slideToggle(200);
+
+    var icon = $('.js--nav-icon i');
+
+        if(icon.hasClass('ion-navicon-round')) {
+            icon.addClass('ion-close-round');
+            icon.removeClass('ion-navicon-round');
+        } else {
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
+        }
+    
+   });
