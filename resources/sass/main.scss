@@ -1,6 +1,6 @@
 /* First step is to set margin, padding, and box-sizing on every element */
 
-
+@import "queries";
 /* ----------------------------------- */
 /* BASIC SETUP */
 /* ----------------------------------- */
@@ -191,12 +191,12 @@ h2:after {
 
 /* ----------------------------------- */
 /* HEADER */
-/* ----------------------------------- */
+/* ----------------------------------- */ 
 
 
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .7)), to(rgba(0, 0, 0, .7))), url(img/hero-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(img/hero-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .7)), to(rgba(0, 0, 0, .7))), url("../resources/img/hero-min.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../resources/img/hero-min.jpg"); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -206,7 +206,7 @@ header {
 .hero-text-box {
   position: absolute;
   width: 1140px;
-  top: 50%;
+  top: 50%; 
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);   
